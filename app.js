@@ -12,7 +12,7 @@ app.get("/ping", async (req, res, next) => {
 app.get("/auth/window", async (req, res, next) => {
     const redirectUrl = `https://api.instagram.com/oauth/authorize
   ?client_id=594479062689164
-  &redirect_uri=${config.HOST}/auth/code
+  &redirect_uri=${config.HOST}/auth/code/
   &scope=user_profile,user_media
   &response_type=code`;
 
